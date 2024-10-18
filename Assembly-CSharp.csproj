@@ -43,7 +43,7 @@
      <Compile Include="Assets\Scripts\RangeCone.cs" />
      <Compile Include="Assets\Scripts\BaseCustomCollider.cs" />
      <Compile Include="Assets\Scripts\ConeCollider.cs" />
-     <Compile Include="Assets\Scripts\MissileSignalPower.cs" />
+     <Compile Include="Assets\Scripts\GridIntersect.cs" />
      <Compile Include="Assets\Scripts\Missile.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.10f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

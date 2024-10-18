@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CustomPrimitiveColliders;
+using Unity.VisualScripting;
 
 
 public class RangeCone : MonoBehaviour
@@ -12,6 +13,8 @@ public class RangeCone : MonoBehaviour
     private List<Vector3> grid;
     public GameObject cone;
     public GameObject gridIntersect;
+    private List<GameObject> gridIntersects;
+    private GameObject LargestPower;
 
     private void Awake() {
         radius = cone.GetComponent<ConeCollider>().GetRadius();
@@ -69,6 +72,29 @@ public class RangeCone : MonoBehaviour
     private void InstantiateIntersect(List<Vector3> grid, GameObject gridIntersect) {
         foreach (Vector3 pos in grid) {
             Instantiate(gridIntersect, pos, Quaternion.identity, transform);
+        }
+    }
+
+    private void findLargestPower() {
+        LargestPower = gridIntersects[0];
+        foreach (GameObject gameObject in gridIntersects) {
+            if (gameObject.GetComponent<GridIntersect>().Pr > LargestPower.GetComponent<GridIntersect>().Pr) {
+                LargestPower = gameObject;
+            }
+        }
+    }
+
+    private void SetPower(GameObject gridIntersect, double power) {
+        gridIntersect.GetComponent<GridIntersect>().SetPower(power);
+    }
+
+    public void CalculatePowerBasedOnLargest() {
+        double lgpower = LargestPower.GetComponent<GridIntersect>().Pr;
+        double power;
+        foreach (GameObject gameObject in gridIntersects) {
+            double d = Vector3.Distance(gameObject.transform.position, LargestPower.transform.position);
+            power = lgpower * ( 1 / (radius * radius)) * ( 1 / (d * d));
+            SetPower(gameObject, power);
         }
     }
 }
