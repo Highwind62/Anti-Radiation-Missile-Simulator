@@ -45,9 +45,10 @@ public class Missile : MonoBehaviour
     //cube2.transform.position = new Vector3(cube2.transform.position.x, cube2.transform.position.y, target.transform.position.z);
     //cube3.transform.position = new Vector3(cube3.transform.position.x, cube3.transform.position.y, target.transform.position.z);
 
-    cube1.transform.position = new Vector3(cube1.transform.position.x, cube1.transform.position.y, target.transform.position.z);
-    cube2.transform.position = new Vector3( (target.transform.position.z - transform.position.z) * Mathf.Sin((45.0F/180.0F) * Mathf.PI), cube2.transform.position.y, target.transform.position.z);
-    cube3.transform.position = new Vector3( (target.transform.position.z - transform.position.z) * Mathf.Sin((-45.0F/180.0F) * Mathf.PI), cube3.transform.position.y, target.transform.position.z);
+    cube1.transform.localPosition = new Vector3(0, cube1.transform.localPosition.y, (target.transform.position.z - transform.position.z) * 10.0F);
+    cube2.transform.localPosition = new Vector3((target.transform.position.z - transform.position.z) * Mathf.Sin((45.0F/180.0F) * Mathf.PI) * 10.0F, cube2.transform.localPosition.y, (target.transform.position.z - transform.position.z) * 10.0F);
+    cube3.transform.localPosition = new Vector3(-1.0F * (target.transform.position.z - transform.position.z) * Mathf.Sin((45.0F/180.0F) * Mathf.PI) * 10.0F, cube3.transform.localPosition.y, (target.transform.position.z - transform.position.z) * 10.0F);
+
 
     distance1 = Vector3.Distance(cube1.transform.position, target.transform.position);
     distance2 = Vector3.Distance(cube2.transform.position, target.transform.position);
