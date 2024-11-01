@@ -4,12 +4,18 @@ Copyright (c) 2018 WestHillApps (Hironari Nishioka)
 This software is released under the MIT License.
 http://opensource.org/licenses/mit-license.php
 */
+using System;
 using System.Text;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace CustomPrimitiveColliders
 {
     [AddComponentMenu("CustomPrimitiveColliders/3D/Cone Collider"), RequireComponent(typeof(MeshCollider))]
+
+    [Serializable]
+    public class RadarDetected : UnityEvent<GameObject>{};
+
     public class ConeCollider : BaseCustomCollider
     {
         [SerializeField]
@@ -22,6 +28,7 @@ namespace CustomPrimitiveColliders
         private int m_openAngle = 45;
         [SerializeField]
         private int m_numVertices = 32;
+        public RadarDetected radarDetected;
 
         private void Awake()
         {
@@ -43,6 +50,7 @@ namespace CustomPrimitiveColliders
 #endif
 
         public float GetRadius() {
+
             return m_radius;
         }
 
@@ -160,6 +168,15 @@ namespace CustomPrimitiveColliders
             mesh.triangles = triangles;
 
             return mesh;
+        }
+
+        private void OnTriggerEnter(Collider collider)
+        {
+            if (collider.gameObject.tag == "Radar")
+            {
+                Debug.Log("Radar in range");
+                radarDetected.Invoke(collider.gameObject);
+            }
         }
     }
 }

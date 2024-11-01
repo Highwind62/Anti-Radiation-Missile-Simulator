@@ -1,13 +1,7 @@
+using UnityEngine;
 using System;
-using UnityEngine;
-/*
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEditor;
-*/
 
-public class GridIntersect
+public class GridIntersect : MonoBehaviour
 {
     public double Pr { get; set; } // Received power, in watts
     public double Pt { get; set; } // Transmitted power, in watts
