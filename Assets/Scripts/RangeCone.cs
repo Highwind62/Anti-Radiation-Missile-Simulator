@@ -14,11 +14,11 @@ public class RangeCone : MonoBehaviour
     public GameObject gridIntersect;
 
     private void Awake() {
-        radius = cone.GetComponent<ConeCollider>().GetRadius();
-        length = cone.GetComponent<ConeCollider>().GetLength();
+        //radius = cone.GetComponent<ConeCollider>().GetRadius();
+        //length = cone.GetComponent<ConeCollider>().GetLength();
 
-        grid = findGridIntersect(radius, length, gridSize);
-        InstantiateIntersect(grid, gridIntersect);
+        //grid = findGridIntersect(radius, length, gridSize);
+        //InstantiateIntersect(grid, gridIntersect);
     }
 
     private List<Vector3> findGridIntersect(float radius, float length, int size) {
