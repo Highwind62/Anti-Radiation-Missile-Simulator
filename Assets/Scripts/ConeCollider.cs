@@ -30,21 +30,39 @@ namespace CustomPrimitiveColliders
         private int m_numVertices = 32;
         public RadarDetected radarDetected;
 
+        public GameObject target;
+
+        public GameObject missile;
+
+        private float distance;
+
+
         private void Awake()
         {
-            ReCreate(m_radius, m_length, m_useOpenAngle, m_openAngle, m_numVertices);
+            //ReCreate(m_radius, m_length, m_useOpenAngle, m_openAngle, m_numVertices);
+            distance = Vector3.Distance(missile.transform.position, target.transform.position);
+            ReCreate(5.0F * distance, 10.0F * distance, m_useOpenAngle, m_openAngle, m_numVertices);
+        }
+
+        void Update(){
+            distance = Vector3.Distance(missile.transform.position, target.transform.position);
+            ReCreate(5.0F * distance, 10.0F * distance, m_useOpenAngle, m_openAngle, m_numVertices);
         }
 
 #if UNITY_EDITOR
 
         private void Reset()
         {
-            ReCreate(m_radius, m_length, m_useOpenAngle, m_openAngle, m_numVertices);
+            //ReCreate(m_radius, m_length, m_useOpenAngle, m_openAngle, m_numVertices);
+            distance = Vector3.Distance(missile.transform.position, target.transform.position);
+            ReCreate(5.0F * distance, 10.0F * distance, m_useOpenAngle, m_openAngle, m_numVertices);
         }
 
         private void OnValidate()
         {
-            ReCreate(m_radius, m_length, m_useOpenAngle, m_openAngle, m_numVertices);
+            //ReCreate(m_radius, m_length, m_useOpenAngle, m_openAngle, m_numVertices);
+            distance = Vector3.Distance(missile.transform.position, target.transform.position);
+            ReCreate(5.0F * distance, 10.0F * distance, m_useOpenAngle, m_openAngle, m_numVertices);
         }
 
 #endif
@@ -175,7 +193,7 @@ namespace CustomPrimitiveColliders
             if (collider.gameObject.tag == "Radar")
             {
                 Debug.Log("Radar in range");
-                radarDetected.Invoke(collider.gameObject);
+                //radarDetected.Invoke(collider.gameObject);
             }
         }
     }

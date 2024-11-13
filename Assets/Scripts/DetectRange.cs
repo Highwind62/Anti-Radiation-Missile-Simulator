@@ -93,7 +93,7 @@ public class DetectRange : MonoBehaviour
         FindPlane();
         FindLargestPower(radar);
         CalculatePowerBasedOnLargest();
-        EditorApplication.isPaused = true;
+        EditorApplication.isPaused = false;
     }
 
     private Vector3 FindConeBaseCenter() {
