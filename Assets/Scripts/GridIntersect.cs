@@ -32,4 +32,8 @@ public class GridIntersect : MonoBehaviour
         double S = CalculatePowerPerUnitArea(); 
         return (S * Math.Pow(Lambda, 2)) / (4 * Math.PI);
     }
+
+    void Update(){
+        Destroy(gameObject);
+    }
 }
