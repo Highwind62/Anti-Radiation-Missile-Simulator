@@ -8,6 +8,11 @@ public class GridIntersect : MonoBehaviour
     public double Lambda { get; set; } // Transmitted wavelength, in meters
     public double S { get; set; } // Power per unit area at a distance R, in meters
     public double R { get; set; } // Distance from transmitter to receiver, in meters
+    public float creationTime;
+
+    void Awake() {
+        this.creationTime = Time.time;
+    }
 
     public GridIntersect(double pt, double lambda, double r)
     {
@@ -20,6 +25,11 @@ public class GridIntersect : MonoBehaviour
         Pr = power;
     }
 
+    public double GetPower() {
+        return Pr;
+    }
+
+
     // Calculate S = Pt / (4 * π * R^2)
     public double CalculatePowerPerUnitArea()
     {
@@ -31,9 +41,5 @@ public class GridIntersect : MonoBehaviour
     {
         double S = CalculatePowerPerUnitArea(); 
         return (S * Math.Pow(Lambda, 2)) / (4 * Math.PI);
-    }
-
-    void Update(){
-        Destroy(gameObject);
     }
 }

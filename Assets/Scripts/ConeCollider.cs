@@ -188,6 +188,7 @@ namespace CustomPrimitiveColliders
             return mesh;
         }
 
+        /*
         private void OnTriggerEnter(Collider collider)
         {
             if (collider.gameObject.tag == "Radar")
@@ -196,5 +197,6 @@ namespace CustomPrimitiveColliders
                 //radarDetected.Invoke(collider.gameObject);
             }
         }
+        */
     }
 }

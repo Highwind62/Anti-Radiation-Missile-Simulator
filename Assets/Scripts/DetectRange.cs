@@ -14,7 +14,7 @@ public class DetectRange : MonoBehaviour
     private Plane gridPlane;
     public GameObject cone;
     public GameObject gridIntersect;
-    private List<GameObject> gridIntersects;
+    private List<GameObject> gridIntersects = new List<GameObject>();
     private GameObject LargestPower;
 
 
@@ -52,7 +52,7 @@ public class DetectRange : MonoBehaviour
         }
     }
 
-    private void FindLargestPower(GameObject radar) {
+    public void FindLargestPower(GameObject radar) {
         Vector3 radarPos = radar.transform.position;
         Vector3 missilePos = missile.transform.position;
         Ray ray = new Ray(missilePos, radarPos);
@@ -61,22 +61,49 @@ public class DetectRange : MonoBehaviour
             Vector3 LargestPowerPos = ray.GetPoint(distance);
             LargestPower = Instantiate(gridIntersect, LargestPowerPos, Quaternion.identity);
             LargestPower.transform.SetParent(transform);
+            LargestPower.GetComponent<GridIntersect>().SetPower(100);
         }
+        //Debug.Log("" + LargestPower.GetComponent<GridIntersect>().GetPower());
     }
 
     private void SetPower(GameObject gridIntersect, double power) {
         gridIntersect.GetComponent<GridIntersect>().SetPower(power);
     }
 
-    public void CalculatePowerBasedOnLargest() {
-        double lgpower = LargestPower.GetComponent<GridIntersect>().Pr;
-        double power;
+    public void CalculatePowerBasedOnLargest(GameObject radar) {
+        double radarPower = 100;
+        Vector3 radarPos = radar.transform.position;
+        double power = 0;
         foreach (GameObject gameObject in gridIntersects) {
-            double d = Vector3.Distance(gameObject.transform.position, LargestPower.transform.position);
-            power = lgpower * ( 1 / (radius * radius)) * ( 1 / (d * d));
-            SetPower(gameObject, power);
+            if (gameObject != null) {
+                double d = Vector3.Distance(gameObject.transform.position, radarPos);
+                power = radarPower * ( 1 / (radius * radius)) * ( 1 / (d * d));
+                SetPower(gameObject, power);
+            }
         }
     }
+    
+    public Vector3 FindNewDirection() {
+        GameObject newDirection = null;
+        double power = 0;
+        foreach (GameObject gameObject in gridIntersects) {
+            if (gameObject != null) {
+                double currentPower = gameObject.GetComponent<GridIntersect>().GetPower();
+                //Debug.Log("" + currentPower);
+                if (currentPower > power) {
+                    power = currentPower;
+                    newDirection = gameObject;
+                }
+            }
+        }
+
+        Vector3 newDir = missile.GetComponent<Missile>().GetDirection();
+        if (newDirection != null) {
+            newDir = (newDirection.transform.position - missile.transform.position).normalized;
+        }
+        return newDir;
+    }
+
 
     public void RadarDetected(GameObject radar)
     {
@@ -92,7 +119,7 @@ public class DetectRange : MonoBehaviour
         InstantiateIntersect(grid, gridIntersect);
         FindPlane();
         FindLargestPower(radar);
-        CalculatePowerBasedOnLargest();
+        //CalculatePowerBasedOnLargest();
         EditorApplication.isPaused = false;
     }
 
@@ -120,5 +147,30 @@ public class DetectRange : MonoBehaviour
         Vector3 normal = Vector3.Cross(v1, v2).normalized;
 
         gridPlane = new Plane(normal, p1);
+    }
+
+    public void GenerateGrid(GameObject target, int resolution) {
+        float distance = Vector3.Distance(transform.position, target.transform.position);
+        radius = 0.5F * distance;
+
+        for(int i = 0; i < resolution; i++){
+            float current_x = (i * (2.0F * radius/resolution)) - radius;
+            for(int j = 0; j < resolution; j++){
+                float current_y = (j * (2.0F * radius/resolution)) - radius;
+                GameObject obj = Instantiate(gridIntersect, transform.TransformPoint(new Vector3 (current_x * 10.0F, current_y * 10.0F, 10.0F*distance)), transform.rotation);
+                gridIntersects.Add(obj);
+                obj.transform.SetParent(transform);
+                
+            }
+        }
+    }
+
+    public void DestroyGrids() {
+        foreach(GameObject obj in gridIntersects) {
+            float currentTime = Time.time;
+            if (obj != null && currentTime - obj.GetComponent<GridIntersect>().creationTime >= 0.01f) {
+                Destroy(obj);
+            }
+        }
     }
 }

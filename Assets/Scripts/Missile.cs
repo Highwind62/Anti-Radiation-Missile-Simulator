@@ -14,6 +14,9 @@ public class Missile : MonoBehaviour
 
     public GameObject cube;
 
+    public GameObject DetectRange;
+    public DetectRange detectRange;
+
 
     [SerializeField] public int resolution;
 
@@ -23,9 +26,12 @@ public class Missile : MonoBehaviour
 
     private float closest_cube;
 
-    void Update()
+    void Start() {
+      detectRange = DetectRange.GetComponent<DetectRange>();
+    }
+    void FixedUpdate()
     {
-      
+      /*
       distance = Vector3.Distance(transform.position, target.transform.position);
       radius = 0.5F * distance;
 
@@ -36,7 +42,13 @@ public class Missile : MonoBehaviour
           Instantiate(cube, transform.TransformPoint(new Vector3 (current_x * 10.0F, current_y * 10.0F, -10.0F*distance)), transform.rotation);
         }
       }
+      */
 
+      detectRange.GenerateGrid(target, resolution);
+      detectRange.CalculatePowerBasedOnLargest(target);
+      moveDir = detectRange.FindNewDirection();
+      Debug.Log("New Direction: " + moveDir);
+      detectRange.DestroyGrids();
       transform.position += moveDir * speed;  
       HitCheck();
     }
@@ -46,6 +58,7 @@ public class Missile : MonoBehaviour
       return moveDir;  
     }
 
+    /*
     void OnCollisionEnter(Collision collision) 
     {
       Debug.Log("Radar in range");
@@ -58,17 +71,15 @@ public class Missile : MonoBehaviour
         moveDir.Normalize();
       }
     }
+    */
 
     void HitCheck() 
     {
-      if (targetPos != null) 
+      // If missile hit radar, exit editor game mode.
+      if (Vector3.Distance(target.transform.position, transform.position) < 10)
       {
-        // If missile hit radar, exit editor game mode.
-        if (Vector3.Distance(targetPos.position, transform.position) < 10)
-        {
-          Debug.Log("Missile hit radar.");
-          EditorApplication.isPlaying = false;
-        }
+        Debug.Log("Missile hit radar.");
+        EditorApplication.isPaused = true;
       }
     }
 }
