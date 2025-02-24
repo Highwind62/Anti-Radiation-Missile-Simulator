@@ -1,2 +1,0 @@
-# Anti Radiation Missile Simulator
- 
