@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections.Generic;
 
 public class UIController : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class UIController : MonoBehaviour
     public GameObject startPanel;
     //  Reference to `Missile` script, so UI can control the missile
     public Missile missileScript;
+    public Jammer jammerScript;
 
     void Start()
     {
@@ -115,4 +117,98 @@ public class UIController : MonoBehaviour
         CheckLaunchReady();
 
     }
+
+    //------------------------jammer part-----------------------------
+
+    public TMP_InputField jammerXInputField;
+    public TMP_InputField jammerYInputField;
+    public TMP_InputField jammerZInputField;
+
+    public Button addJammerButton;
+    public Button removeAllJammersButton;
+
+    private List<Jammer> jammerList = new List<Jammer>();
+
+    private float currentJammerX;
+    private float currentJammerY;
+    private float currentJammerZ;
+
+    public void InitializeJammerUI()
+    {
+        jammerXInputField.onEndEdit.AddListener(OnJammerXChanged);
+        jammerYInputField.onEndEdit.AddListener(OnJammerYChanged);
+        jammerYInputField.onEndEdit.AddListener(OnJammerZChanged);
+
+        addJammerButton.onClick.AddListener(AddJammer);
+        removeAllJammersButton.onClick.AddListener(RemoveAllJammers);
+    }
+
+    void OnJammerXChanged(string value)
+    {
+        float xValue;
+        if (float.TryParse(value, out xValue))
+        {
+            currentJammerX = xValue;
+        }
+        else
+        {
+            currentJammerX = 0f;
+            jammerXInputField.text = "0";
+        }
+    }
+
+    void OnJammerYChanged(string value)
+    {
+        float yValue;
+        if (float.TryParse(value, out yValue))
+        {
+            currentJammerY = yValue;
+        }
+        else
+        {
+            currentJammerY = 0f;
+            jammerYInputField.text = "0";
+        }
+    }
+
+    void OnJammerZChanged(string value)
+    {
+        float zValue;
+        if (float.TryParse(value, out zValue))
+        {
+            currentJammerZ = zValue;
+        }
+        else
+        {
+            currentJammerZ = 0f;
+            jammerZInputField.text = "0";
+        }
+    }
+
+    void AddJammer()
+    {
+        GameObject jammerObj = new GameObject("Jammer");
+        Jammer currentJammer = jammerObj.AddComponent<Jammer>();
+
+        currentJammer.x = currentJammerX;
+        currentJammer.y = currentJammerY;
+        currentJammer.z = currentJammerZ;
+
+        currentJammer.AddJammer();
+
+        jammerList.Add(currentJammer);
+
+        Debug.Log($"[UIController] Added Jammer at x={currentJammer.x}, y={currentJammer.y}, z={currentJammer.z}. Total Jammers: {jammerList.Count}");
+    }
+
+    void RemoveAllJammers()
+    {
+        foreach (Jammer jammer in jammerList)
+        {
+            jammer.RemoveJammer();
+        }
+        jammerList.Clear();
+        Debug.Log("[UIController] All Jammers removed.");
+    }
+
 }
