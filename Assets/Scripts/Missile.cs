@@ -22,6 +22,8 @@ public class Missile : MonoBehaviour
 
     public GameObject target;
 
+    public GameObject jammer;
+
     public GameObject cube;
 
     public GameObject DetectRange;
@@ -50,7 +52,7 @@ public class Missile : MonoBehaviour
 
         //2.16 Calculate radar signals and determine missile movement direction
         detectRange.GenerateGrid(target, 10);
-        detectRange.CalculatePowerBasedOnLargest(target);
+        detectRange.CalculatePowerBasedOnLargest(target, jammer);
         moveDir = detectRange.FindNewDirection();
         Debug.Log("New Direction: " + moveDir);
         detectRange.DestroyGrids();
@@ -75,7 +77,7 @@ public class Missile : MonoBehaviour
         */
 
         detectRange.GenerateGrid(target, resolution);
-      detectRange.CalculatePowerBasedOnLargest(target);
+      detectRange.CalculatePowerBasedOnLargest(target, jammer);
       moveDir = detectRange.FindNewDirection();
       Debug.Log("New Direction: " + moveDir);
       detectRange.DestroyGrids();
