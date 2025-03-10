@@ -70,14 +70,23 @@ public class DetectRange : MonoBehaviour
         gridIntersect.GetComponent<GridIntersect>().SetPower(power);
     }
 
-    public void CalculatePowerBasedOnLargest(GameObject radar) {
+    public void CalculatePowerBasedOnLargest(GameObject radar, GameObject jammer) {
         double radarPower = 100;
+        double jammerPower = 2000;
+
         Vector3 radarPos = radar.transform.position;
+        Vector3 jammerPos = jammer.transform.position;
+
+        double radarWeight = radarPower / (radarPower + jammerPower);
+        double jammerWeight = jammerPower / (radarPower + jammerPower);
+
         double power = 0;
         foreach (GameObject gameObject in gridIntersects) {
             if (gameObject != null) {
-                double d = Vector3.Distance(gameObject.transform.position, radarPos);
-                power = radarPower * ( 1 / (radius * radius)) * ( 1 / (d * d));
+                double d1 = Vector3.Distance(gameObject.transform.position, radarPos);
+                double d2 = Vector3.Distance(gameObject.transform.position, jammerPos);
+                power = radarPower * ( 1 / (radius * radius)) * ( 1 / (d1 * d1)) * radarWeight +
+                        jammerPower * ( 1 / (radius * radius)) * ( 1 / (d2 * d2)) * jammerWeight;
                 SetPower(gameObject, power);
             }
         }
