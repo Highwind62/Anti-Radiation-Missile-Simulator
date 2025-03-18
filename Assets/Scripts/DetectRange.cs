@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using CustomPrimitiveColliders;
 using UnityEditor;
+using Voxus.Random;
 
 public class DetectRange : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class DetectRange : MonoBehaviour
     public GameObject gridIntersect;
     private List<GameObject> gridIntersects = new List<GameObject>();
     private GameObject LargestPower;
+    [SerializeField] public float noisePower;
 
 
     private List<Vector3> FindGridIntersect(float radius, int size) {
@@ -73,6 +75,7 @@ public class DetectRange : MonoBehaviour
     public void CalculatePowerBasedOnLargest(GameObject radar, GameObject jammer) {
         double radarPower = 100;
         double jammerPower = 2000;
+        noisePower = 4000;
 
         Vector3 radarPos = radar.transform.position;
         Vector3 jammerPos = jammer.transform.position;
@@ -80,13 +83,19 @@ public class DetectRange : MonoBehaviour
         double radarWeight = radarPower / (radarPower + jammerPower);
         double jammerWeight = jammerPower / (radarPower + jammerPower);
 
+        var randGen1 = new RandomGaussian(1, 0);
+        randGen1.SetSeed(Random.Range(0F, 1F));
+        var randGen2 = new RandomGaussian(1, 0);
+        randGen2.SetSeed(Random.Range(0F, 1F));
+
         double power = 0;
         foreach (GameObject gameObject in gridIntersects) {
             if (gameObject != null) {
                 double d1 = Vector3.Distance(gameObject.transform.position, radarPos);
                 double d2 = Vector3.Distance(gameObject.transform.position, jammerPos);
                 power = radarPower * ( 1 / (radius * radius)) * ( 1 / (d1 * d1)) * radarWeight +
-                        jammerPower * ( 1 / (radius * radius)) * ( 1 / (d2 * d2)) * jammerWeight;
+                        jammerPower * ( 1 / (radius * radius)) * ( 1 / (d2 * d2)) * jammerWeight + 
+                        noisePower * Mathf.Sqrt(Mathf.Pow(randGen1.Get(), 2) + Mathf.Pow(randGen2.Get(), 2));
                 SetPower(gameObject, power);
             }
         }
