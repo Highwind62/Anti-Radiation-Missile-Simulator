@@ -74,14 +74,14 @@ public class DetectRange : MonoBehaviour
 
     public void CalculatePowerBasedOnLargest(GameObject radar, GameObject jammer) {
         double radarPower = 100;
-        double jammerPower = 2000;
-        noisePower = 4000;
+        double jammerPower = 175;
+        noisePower = 0;
 
         Vector3 radarPos = radar.transform.position;
         Vector3 jammerPos = jammer.transform.position;
 
-        double radarWeight = radarPower / (radarPower + jammerPower);
-        double jammerWeight = jammerPower / (radarPower + jammerPower);
+        double radarWeight = radarPower / (radarPower + jammerPower + noisePower);
+        double jammerWeight = jammerPower / (radarPower + jammerPower + noisePower);
 
         var randGen1 = new RandomGaussian(1, 0);
         randGen1.SetSeed(Random.Range(0F, 1F));
@@ -92,7 +92,9 @@ public class DetectRange : MonoBehaviour
         foreach (GameObject gameObject in gridIntersects) {
             if (gameObject != null) {
                 double d1 = Vector3.Distance(gameObject.transform.position, radarPos);
-                double d2 = Vector3.Distance(gameObject.transform.position, jammerPos);
+                Vector3 gOPosition = gameObject.transform.position;
+                gOPosition.z = jammerPos.z;
+                double d2 = Vector3.Distance(gOPosition, jammerPos);
                 power = radarPower * ( 1 / (radius * radius)) * ( 1 / (d1 * d1)) * radarWeight +
                         jammerPower * ( 1 / (radius * radius)) * ( 1 / (d2 * d2)) * jammerWeight + 
                         noisePower * Mathf.Sqrt(Mathf.Pow(randGen1.Get(), 2) + Mathf.Pow(randGen2.Get(), 2));
