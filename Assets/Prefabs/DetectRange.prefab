@@ -75,6 +75,8 @@ MonoBehaviour:
   radarDetected:
     m_PersistentCalls:
       m_Calls: []
+  target: {fileID: 0}
+  missile: {fileID: 0}
 --- !u!1 &4557147103805410144
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,3 +126,4 @@ MonoBehaviour:
   gridSize: 4
   cone: {fileID: 1524446994174749497}
   gridIntersect: {fileID: 3470159699941242279, guid: 9f569ff7bd3d5c5459abcc57a61a3878, type: 3}
+  noisePower: 100

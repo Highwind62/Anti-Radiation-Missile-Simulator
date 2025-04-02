@@ -125,6 +125,7 @@ public class UIController : MonoBehaviour
     public TMP_InputField jammerXInputField;
     public TMP_InputField jammerYInputField;
     public TMP_InputField jammerZInputField;
+    public TMP_InputField jammerPowerInputField;
 
     public Button addJammerButton;
     public Button removeAllJammersButton;
@@ -137,12 +138,14 @@ public class UIController : MonoBehaviour
     private float currentJammerX;
     private float currentJammerY;
     private float currentJammerZ;
+    private float currentJammerPower;
 
     public void InitializeJammerUI()
     {
         jammerXInputField.onEndEdit.AddListener(OnJammerXChanged);
         jammerYInputField.onEndEdit.AddListener(OnJammerYChanged);
         jammerYInputField.onEndEdit.AddListener(OnJammerZChanged);
+        jammerPowerInputField.onEndEdit.AddListener(OnJammerPowerChanged);
 
         addJammerButton.onClick.AddListener(AddJammer);
         removeAllJammersButton.onClick.AddListener(RemoveAllJammers);
@@ -167,6 +170,20 @@ public class UIController : MonoBehaviour
         jammerZInputField.text = currentJammerZ.ToString();
     }
 
+    void OnJammerPowerChanged(string value)
+    {
+        float powerValue;
+        if (float.TryParse(value, out powerValue))
+        {
+            currentJammerPower = powerValue;
+        }
+        else
+        {
+            currentJammerPower = 100f;
+            jammerPowerInputField.text = "100";
+        }
+    }
+
     void RemoveSelectedJammer()
     {
         int selectedIndex = jammerDropdown.value;
@@ -189,14 +206,22 @@ public class UIController : MonoBehaviour
 
     void AddJammer()
     {
-        GameObject jammerObj = new GameObject("Jammer");
+        GameObject jammerObj = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        jammerObj.name = "Jammer";
+
+        jammerObj.transform.position = new Vector3(currentJammerX, currentJammerY, currentJammerZ);
+        jammerObj.transform.localScale = new Vector3(10, 10, 10);
+
+        jammerObj.transform.parent = GameObject.Find("Jammers").transform;
+
         Jammer currentJammer = jammerObj.AddComponent<Jammer>();
 
         currentJammer.x = currentJammerX;
         currentJammer.y = currentJammerY;
         currentJammer.z = currentJammerZ;
+        currentJammer.power = currentJammerPower;
 
-        currentJammer.AddJammer();
+        currentJammer.Initialize();
 
         jammerList.Add(currentJammer);
 
