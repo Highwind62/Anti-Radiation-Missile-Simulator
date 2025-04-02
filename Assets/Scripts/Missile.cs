@@ -55,6 +55,8 @@ public class Missile : MonoBehaviour
 
         //2.16 Calculate radar signals and determine missile movement direction
         detectRange.GenerateGrid(target, resolution);
+
+        jmInCone = detectRange.FindJammersInCone(jammers);// Refresh jammer list in real-time
         detectRange.CalculatePowerBasedOnLargest(target, jmInCone);
         moveDir = detectRange.FindNewDirection();
         Debug.Log("New Direction: " + moveDir);
@@ -126,6 +128,7 @@ public class Missile : MonoBehaviour
     public void Launch()
     {
         Debug.Log("Missile Launched!");
+        jmInCone = detectRange.FindJammersInCone(jammers);
         isLaunched = true;
     }
 

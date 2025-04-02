@@ -34,6 +34,8 @@ public class UIController : MonoBehaviour
         startPanel.SetActive(true);
 
         CheckLaunchReady();
+
+        InitializeJammerUI();
     }
 
     void OnSpeedInputChanged(string value)
@@ -123,82 +125,112 @@ public class UIController : MonoBehaviour
     public TMP_InputField jammerXInputField;
     public TMP_InputField jammerYInputField;
     public TMP_InputField jammerZInputField;
+    public TMP_InputField jammerPowerInputField;
 
     public Button addJammerButton;
     public Button removeAllJammersButton;
+    public Button removeSelectedJammerButton;
+    public TMP_Dropdown jammerDropdown;
 
     private List<Jammer> jammerList = new List<Jammer>();
+    private List<string> jammerNames = new List<string>();
 
     private float currentJammerX;
     private float currentJammerY;
     private float currentJammerZ;
+    private float currentJammerPower;
 
     public void InitializeJammerUI()
     {
         jammerXInputField.onEndEdit.AddListener(OnJammerXChanged);
         jammerYInputField.onEndEdit.AddListener(OnJammerYChanged);
         jammerYInputField.onEndEdit.AddListener(OnJammerZChanged);
+        jammerPowerInputField.onEndEdit.AddListener(OnJammerPowerChanged);
 
         addJammerButton.onClick.AddListener(AddJammer);
         removeAllJammersButton.onClick.AddListener(RemoveAllJammers);
+        removeSelectedJammerButton.onClick.AddListener(RemoveSelectedJammer);
     }
 
     void OnJammerXChanged(string value)
     {
-        float xValue;
-        if (float.TryParse(value, out xValue))
-        {
-            currentJammerX = xValue;
-        }
-        else
-        {
-            currentJammerX = 0f;
-            jammerXInputField.text = "0";
-        }
+        currentJammerX = float.TryParse(value, out var xValue) ? xValue : 0f;
+        jammerXInputField.text = currentJammerX.ToString();
     }
 
     void OnJammerYChanged(string value)
     {
-        float yValue;
-        if (float.TryParse(value, out yValue))
-        {
-            currentJammerY = yValue;
-        }
-        else
-        {
-            currentJammerY = 0f;
-            jammerYInputField.text = "0";
-        }
+        currentJammerY = float.TryParse(value, out var yValue) ? yValue : 0f;
+        jammerYInputField.text = currentJammerY.ToString();
     }
 
     void OnJammerZChanged(string value)
     {
-        float zValue;
-        if (float.TryParse(value, out zValue))
+        currentJammerZ = float.TryParse(value, out var zValue) ? zValue : 0f;
+        jammerZInputField.text = currentJammerZ.ToString();
+    }
+
+    void OnJammerPowerChanged(string value)
+    {
+        float powerValue;
+        if (float.TryParse(value, out powerValue))
         {
-            currentJammerZ = zValue;
+            currentJammerPower = powerValue;
         }
         else
         {
-            currentJammerZ = 0f;
-            jammerZInputField.text = "0";
+            currentJammerPower = 100f;
+            jammerPowerInputField.text = "100";
+        }
+    }
+
+    void RemoveSelectedJammer()
+    {
+        int selectedIndex = jammerDropdown.value;
+        if (selectedIndex < jammerList.Count)
+        {
+            jammerList[selectedIndex].RemoveJammer();
+            Destroy(jammerList[selectedIndex].gameObject);
+
+            jammerList.RemoveAt(selectedIndex);
+            jammerNames.RemoveAt(selectedIndex);
+
+            UpdateDropdown();
+            Debug.Log($"[UIController] Removed Jammer at index {selectedIndex}");
+        }
+        else
+        {
+            Debug.LogWarning("No valid Jammer selected to remove.");
         }
     }
 
     void AddJammer()
     {
-        GameObject jammerObj = new GameObject("Jammer");
+        GameObject jammerObj = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        jammerObj.name = "Jammer";
+
+        jammerObj.transform.position = new Vector3(currentJammerX, currentJammerY, currentJammerZ);
+        jammerObj.transform.localScale = new Vector3(10, 10, 10);
+
+        jammerObj.transform.parent = GameObject.Find("Jammers").transform;
+
         Jammer currentJammer = jammerObj.AddComponent<Jammer>();
 
         currentJammer.x = currentJammerX;
         currentJammer.y = currentJammerY;
         currentJammer.z = currentJammerZ;
+        currentJammer.power = currentJammerPower;
 
-        currentJammer.AddJammer();
+        currentJammer.Initialize();
 
         jammerList.Add(currentJammer);
 
-        Debug.Log($"[UIController] Added Jammer at x={currentJammer.x}, y={currentJammer.y}, z={currentJammer.z}. Total Jammers: {jammerList.Count}");
+        string jammerName = $"Jammer_{jammerList.Count}: {currentJammerX}, {currentJammerY}, {currentJammerZ}";
+        jammerNames.Add(jammerName);
+
+        UpdateDropdown();
+
+        Debug.Log($"[UIController] Added {jammerName}. Total Jammers: {jammerList.Count}");
     }
 
     void RemoveAllJammers()
@@ -206,9 +238,19 @@ public class UIController : MonoBehaviour
         foreach (Jammer jammer in jammerList)
         {
             jammer.RemoveJammer();
+            Destroy(jammer.gameObject);
         }
         jammerList.Clear();
+        jammerNames.Clear();
+
+        UpdateDropdown();
         Debug.Log("[UIController] All Jammers removed.");
+    }
+
+    void UpdateDropdown()
+    {
+        jammerDropdown.ClearOptions();
+        jammerDropdown.AddOptions(jammerNames);
     }
 
 }
