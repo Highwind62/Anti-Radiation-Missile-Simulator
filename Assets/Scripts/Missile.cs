@@ -22,7 +22,8 @@ public class Missile : MonoBehaviour
 
     public GameObject target;
 
-    public GameObject jammer;
+    public GameObject jammers;
+    private List<GameObject> jmInCone;
 
     public GameObject cube;
 
@@ -44,6 +45,8 @@ public class Missile : MonoBehaviour
       detectRange = DetectRange.GetComponent<DetectRange>();
       startPosition = transform.position;
       isLaunched = false; //Ensure when start, Missile dones't move
+      jmInCone = detectRange.FindJammersInCone(jammers);
+
     }
     void FixedUpdate()
     {
@@ -51,8 +54,8 @@ public class Missile : MonoBehaviour
         if (!isLaunched) return;
 
         //2.16 Calculate radar signals and determine missile movement direction
-        detectRange.GenerateGrid(target, 10);
-        detectRange.CalculatePowerBasedOnLargest(target, jammer);
+        detectRange.GenerateGrid(target, resolution);
+        detectRange.CalculatePowerBasedOnLargest(target, jmInCone);
         moveDir = detectRange.FindNewDirection();
         Debug.Log("New Direction: " + moveDir);
         detectRange.DestroyGrids();
@@ -75,14 +78,15 @@ public class Missile : MonoBehaviour
           }
         }
         */
-
-        detectRange.GenerateGrid(target, resolution);
+      /*
+      detectRange.GenerateGrid(target, resolution);
       detectRange.CalculatePowerBasedOnLargest(target, jammer);
       moveDir = detectRange.FindNewDirection();
       Debug.Log("New Direction: " + moveDir);
       detectRange.DestroyGrids();
       transform.position += moveDir * speed;  
       HitCheck();
+      */
     }
 
     public Vector3 GetDirection() 

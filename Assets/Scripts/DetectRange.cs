@@ -72,16 +72,29 @@ public class DetectRange : MonoBehaviour
         gridIntersect.GetComponent<GridIntersect>().SetPower(power);
     }
 
-    public void CalculatePowerBasedOnLargest(GameObject radar, GameObject jammer) {
+    public List<GameObject> FindJammersInCone(GameObject Jammers) {
+        List<GameObject> jammers = new List<GameObject>();
+        foreach (Transform jammer in Jammers.GetComponentInChildren<Transform>(false)) {
+            Debug.Log("" + jammer.gameObject.name);
+            GameObject jm = jammer.gameObject;
+            Vector3 jmPosition = jm.transform.position;
+            double ratio = Mathf.Abs(length - Mathf.Abs(jmPosition.z - center.z)) / length;
+            double current_r = radius * ratio;
+            Vector3 current_center = center;
+            current_center.z = jmPosition.z;
+            if (Vector3.Distance(current_center, jmPosition) > current_r) {
+                continue;
+            }
+            jammers.Add(jm);
+        }
+        return jammers;
+    }
+
+    public void CalculatePowerBasedOnLargest(GameObject radar, List<GameObject> jammers) {
         double radarPower = 100;
-        double jammerPower = 175;
         noisePower = 0;
 
         Vector3 radarPos = radar.transform.position;
-        Vector3 jammerPos = jammer.transform.position;
-
-        double radarWeight = radarPower / (radarPower + jammerPower + noisePower);
-        double jammerWeight = jammerPower / (radarPower + jammerPower + noisePower);
 
         var randGen1 = new RandomGaussian(1, 0);
         randGen1.SetSeed(Random.Range(0F, 1F));
@@ -91,13 +104,19 @@ public class DetectRange : MonoBehaviour
         double power = 0;
         foreach (GameObject gameObject in gridIntersects) {
             if (gameObject != null) {
-                double d1 = Vector3.Distance(gameObject.transform.position, radarPos);
                 Vector3 gOPosition = gameObject.transform.position;
-                gOPosition.z = jammerPos.z;
-                double d2 = Vector3.Distance(gOPosition, jammerPos);
-                power = radarPower * ( 1 / (radius * radius)) * ( 1 / (d1 * d1)) * radarWeight +
-                        jammerPower * ( 1 / (radius * radius)) * ( 1 / (d2 * d2)) * jammerWeight + 
-                        noisePower * Mathf.Sqrt(Mathf.Pow(randGen1.Get(), 2) + Mathf.Pow(randGen2.Get(), 2));
+                double d1 = Vector3.Distance(gOPosition, radarPos);
+                power = radarPower * ( 1 / (radius * radius)) * ( 1 / (d1 * d1));
+
+                foreach (GameObject jammer in jammers) {
+                    gOPosition.z = jammer.transform.position.z;
+                    double d2 = Vector3.Distance(gOPosition, jammer.transform.position);
+                    double jammerPower = jammer.GetComponent<Jammer>().GetJammerPower();
+                    Debug.Log("Power: " + jammerPower);
+                    power += jammerPower * ( 1 / (radius * radius)) * ( 1 / (d2 * d2));
+                }
+
+                power += noisePower * Mathf.Sqrt(Mathf.Pow(randGen1.Get(), 2) + Mathf.Pow(randGen2.Get(), 2));
                 SetPower(gameObject, power);
             }
         }
