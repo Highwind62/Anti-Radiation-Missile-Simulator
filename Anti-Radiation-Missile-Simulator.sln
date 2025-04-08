@@ -1,18 +1,39 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{CEDC50E5-0E50-B23D-D840-40CDE2FF4DC1}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Den.Tools", "Den.Tools.csproj", "{fcded8b0-a78a-a404-dfff-ad1b103e3fda}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapMagic.Editor", "MapMagic.Editor.csproj", "{a2174964-c486-4b3f-b1cb-d450cb10e8cf}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{e550dcce-500e-3db2-d840-40cde2ff4dc1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapMagic", "MapMagic.csproj", "{4719f62d-f8c1-f91e-2961-eccd9cac989f}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Den.Tools.Editor", "Den.Tools.Editor.csproj", "{b7c8f982-f384-c5f6-917e-941bfb23d67b}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapMagic.Settings", "MapMagic.Settings.csproj", "{844c13a4-3799-3191-f9b4-1b2b60138775}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{f49e298b-ca22-3b7c-b36c-94d6866aa239}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CEDC50E5-0E50-B23D-D840-40CDE2FF4DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CEDC50E5-0E50-B23D-D840-40CDE2FF4DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CEDC50E5-0E50-B23D-D840-40CDE2FF4DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CEDC50E5-0E50-B23D-D840-40CDE2FF4DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{fcded8b0-a78a-a404-dfff-ad1b103e3fda}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{fcded8b0-a78a-a404-dfff-ad1b103e3fda}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{a2174964-c486-4b3f-b1cb-d450cb10e8cf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{a2174964-c486-4b3f-b1cb-d450cb10e8cf}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{e550dcce-500e-3db2-d840-40cde2ff4dc1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{e550dcce-500e-3db2-d840-40cde2ff4dc1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4719f62d-f8c1-f91e-2961-eccd9cac989f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4719f62d-f8c1-f91e-2961-eccd9cac989f}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b7c8f982-f384-c5f6-917e-941bfb23d67b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b7c8f982-f384-c5f6-917e-941bfb23d67b}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{844c13a4-3799-3191-f9b4-1b2b60138775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{844c13a4-3799-3191-f9b4-1b2b60138775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{f49e298b-ca22-3b7c-b36c-94d6866aa239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f49e298b-ca22-3b7c-b36c-94d6866aa239}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
