@@ -75,7 +75,7 @@ public class DetectRange : MonoBehaviour
     public List<GameObject> FindJammersInCone(GameObject Jammers) {
         List<GameObject> jammers = new List<GameObject>();
         foreach (Transform jammer in Jammers.GetComponentInChildren<Transform>(false)) {
-            Debug.Log("" + jammer.gameObject.name);
+            //Debug.Log("" + jammer.gameObject.name);
             GameObject jm = jammer.gameObject;
             Vector3 jmPosition = jm.transform.position;
             double ratio = Mathf.Abs(length - Mathf.Abs(jmPosition.z - center.z)) / length;
