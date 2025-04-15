@@ -15,7 +15,7 @@ C:/Users/scrat/OneDrive/Documents/GitHub/Anti-Radiation-Missile-Simulator
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-51948
+52732
 Successfully changed project path to: C:/Users/scrat/OneDrive/Documents/GitHub/Anti-Radiation-Missile-Simulator
 C:/Users/scrat/OneDrive/Documents/GitHub/Anti-Radiation-Missile-Simulator
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/scrat/OneDrive/Documents/GitHub/Anti-Radiation-Missile-Simulator
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [25396] Host "[IP] 10.74.9.199 [Port] 0 [Flags] 2 [Guid] 4175130699 [EditorId] 4175130699 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NIOSBHC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [24360] Host "[IP] 10.74.9.199 [Port] 0 [Flags] 2 [Guid] 3952646927 [EditorId] 3952646927 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NIOSBHC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [25396] Host "[IP] 10.74.9.199 [Port] 0 [Flags] 2 [Guid] 4175130699 [EditorId] 4175130699 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NIOSBHC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24360] Host "[IP] 10.74.9.199 [Port] 0 [Flags] 2 [Guid] 3952646927 [EditorId] 3952646927 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NIOSBHC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 23 workers.
-Refreshing native plugins compatible for Editor in 4.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 6.67 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.10f1 (ff3792e53c62)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56544
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005125 seconds.
-- Loaded All Assemblies, in  0.243 seconds
+Registered in 0.003727 seconds.
+- Loaded All Assemblies, in  0.220 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.176 seconds
-Domain Reload Profiling: 418ms
-	BeginReloadAssembly (80ms)
+- Finished resetting the current domain, in  0.158 seconds
+Domain Reload Profiling: 378ms
+	BeginReloadAssembly (72ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
+		CreateAndSetChildDomain (1ms)
 	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (93ms)
-		LoadAssemblies (79ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (83ms)
+		LoadAssemblies (70ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (91ms)
-			TypeCache.Refresh (90ms)
-				TypeCache.ScanAssembly (81ms)
+		AnalyzeDomain (82ms)
+			TypeCache.Refresh (81ms)
+				TypeCache.ScanAssembly (73ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (176ms)
+	FinalizeReload (159ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (136ms)
+		SetupLoadedEditorAssemblies (123ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
+			InitializePlatformSupportModulesInManaged (6ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (88ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
+			ProcessInitializeOnLoadAttributes (81ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,119 +115,255 @@ Domain Reload Profiling: 418ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.436 seconds
-Refreshing native plugins compatible for Editor in 1.55 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.502 seconds
+Refreshing native plugins compatible for Editor in 2.15 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.347 seconds
-Domain Reload Profiling: 782ms
-	BeginReloadAssembly (93ms)
+- Finished resetting the current domain, in  0.469 seconds
+Domain Reload Profiling: 970ms
+	BeginReloadAssembly (111ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (13ms)
+		CreateAndSetChildDomain (15ms)
 	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (288ms)
-		LoadAssemblies (221ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (331ms)
+		LoadAssemblies (258ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (122ms)
-			TypeCache.Refresh (110ms)
-				TypeCache.ScanAssembly (98ms)
-			ScanForSourceGeneratedMonoScriptInfo (8ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (347ms)
+		AnalyzeDomain (138ms)
+			TypeCache.Refresh (123ms)
+				TypeCache.ScanAssembly (111ms)
+			ScanForSourceGeneratedMonoScriptInfo (10ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (470ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (264ms)
+		SetupLoadedEditorAssemblies (362ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (2ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (34ms)
-			ProcessInitializeOnLoadAttributes (208ms)
-			ProcessInitializeOnLoadMethodAttributes (12ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (268ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 4.78 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (10.4 MB). Loaded Objects now: 3829.
+Memory consumption went from 160.1 MB to 149.7 MB.
+Total: 5.628700 ms (FindLiveObjects: 0.234000 ms CreateObjectMapping: 0.118100 ms MarkObjects: 3.847900 ms  DeleteObjects: 1.427300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 324178.355250 seconds.
+  path: Assets/3D Models/Radar/1S12 Long Track acquisition radar/1-141121231547.bmp
+  artifactKey: Guid(091d7025b48a51846a181e85a7aa84d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Radar/1S12 Long Track acquisition radar/1-141121231547.bmp using Guid(091d7025b48a51846a181e85a7aa84d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3720e516122e7f4edd4c967f2da94f32') in 0.091970 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/3D Models/Radar/1S12 Long Track acquisition radar/1-130ZQ13R94C.jpg
+  artifactKey: Guid(5d1c21ca8e17e43469481038c810fe4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Radar/1S12 Long Track acquisition radar/1-130ZQ13R94C.jpg using Guid(5d1c21ca8e17e43469481038c810fe4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '795e90f0a287ba26b875232a0a3764d3') in 0.028706 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/3D Models/Radar/1S12 Long Track acquisition radar/2022-10-12_195536.jpg
+  artifactKey: Guid(f34e2299668cbd14faac3f6c42523495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Radar/1S12 Long Track acquisition radar/2022-10-12_195536.jpg using Guid(f34e2299668cbd14faac3f6c42523495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63befb6d049f3f0c17f2b233615910cd') in 0.029306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/3D Models/Radar/1S12 Long Track acquisition radar/3dtxt024.jpg
+  artifactKey: Guid(b7664f5f7ad9534419c08b4880bc4533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Radar/1S12 Long Track acquisition radar/3dtxt024.jpg using Guid(b7664f5f7ad9534419c08b4880bc4533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3160e7f1569a2d03aaf37bac05e563b5') in 0.028640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/3D Models/Radar/1S12 Long Track acquisition radar/2023-07-27_162823.jpg
+  artifactKey: Guid(24f5790ffe0598f4b858dcc2b3b123a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Radar/1S12 Long Track acquisition radar/2023-07-27_162823.jpg using Guid(24f5790ffe0598f4b858dcc2b3b123a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '605fe4605d96d404804d2eb1652562b8') in 0.026668 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/3D Models/Radar/1S12 Long Track acquisition radar/01uNnGE5tnS._AC_.jpg
+  artifactKey: Guid(4c89b3d79ecbe3f45bd9e6942dfd7951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Radar/1S12 Long Track acquisition radar/01uNnGE5tnS._AC_.jpg using Guid(4c89b3d79ecbe3f45bd9e6942dfd7951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebb4901cc8fcbfdc77e22ef4dfaa2a98') in 0.023545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/MapMagic/Core/Editor/Resources/MapMagic/NodeLayers/AddIcon.png
+  artifactKey: Guid(7af2df20b3a002145b59c67a2deebf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Core/Editor/Resources/MapMagic/NodeLayers/AddIcon.png using Guid(7af2df20b3a002145b59c67a2deebf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91dd1ca23428aa704ef643935ef55f74') in 0.023748 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MapMagic/Core/Editor/Resources/GeneratorIcons/Add.png
+  artifactKey: Guid(2f2049674384e744489e0e8b8f4f6332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Core/Editor/Resources/GeneratorIcons/Add.png using Guid(2f2049674384e744489e0e8b8f4f6332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e30c91c21ecb9da7c2afd9c830cc5ac') in 0.025736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MapMagic/Demo/Compatibility/MegaSplat/_splat_params.png
+  artifactKey: Guid(de0c72f4dc49e774189a300b6bf678f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Demo/Compatibility/MegaSplat/_splat_params.png using Guid(de0c72f4dc49e774189a300b6bf678f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff9b9918d42978b087c2c9a1fa1c67f2') in 0.024379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/MapMagic/Core/Editor/Resources/MapMagic/NodeLayers/pro/AddIcon.png
+  artifactKey: Guid(30cba69ca63509b47b9ee95479c5ebd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Core/Editor/Resources/MapMagic/NodeLayers/pro/AddIcon.png using Guid(30cba69ca63509b47b9ee95479c5ebd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90f193d2dd6804336fba5a0785f0b25f') in 0.022510 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003466 seconds.
+  path: Assets/MapMagic/Core/Editor/Resources/GeneratorIcons/pro/Adjust.png
+  artifactKey: Guid(0f2d0864c99db4e428656c7194467992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Core/Editor/Resources/GeneratorIcons/pro/Adjust.png using Guid(0f2d0864c99db4e428656c7194467992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b22d78329301526ab96de88a7d9156e') in 0.021945 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.006965 seconds.
+  path: Assets/MapMagic/Core/Editor/Resources/MapMagic/ValuesAdjustPreview/On/Adjust.png
+  artifactKey: Guid(367dacab1866c1949a240af75230a904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Core/Editor/Resources/MapMagic/ValuesAdjustPreview/On/Adjust.png using Guid(367dacab1866c1949a240af75230a904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4335c00c971a8dca2783bd6beffce31b') in 0.022060 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.007089 seconds.
+  path: Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/Icons/Adjust.png
+  artifactKey: Guid(9b73062ae8cf20241bd14cc9c5abddc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/Icons/Adjust.png using Guid(9b73062ae8cf20241bd14cc9c5abddc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ff344f5cdbce6203a59f0c9ff74dca') in 0.020500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001711 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
+  artifactKey: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f07e31006cf5c240929ab1921e7a80c') in 0.100351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.256 seconds
+Refreshing native plugins compatible for Editor in 2.03 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.497 seconds
+Domain Reload Profiling: 752ms
+	BeginReloadAssembly (94ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (118ms)
+		LoadAssemblies (160ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (498ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (259ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (186ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (4ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 2.44 ms, found 3 plugins.
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Refreshing native plugins compatible for Editor in 3.67 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3145 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (57.1 KB). Loaded Objects now: 3626.
-Memory consumption went from 130.3 MB to 130.3 MB.
-Total: 3.206700 ms (FindLiveObjects: 0.210800 ms CreateObjectMapping: 0.084500 ms MarkObjects: 2.801700 ms  DeleteObjects: 0.108800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.529 seconds
-Refreshing native plugins compatible for Editor in 3.31 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.124 seconds
-Domain Reload Profiling: 1649ms
-	BeginReloadAssembly (176ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (269ms)
-		LoadAssemblies (343ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (29ms)
-			TypeCache.Refresh (14ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (7ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1124ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (465ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (68ms)
-			ProcessInitializeOnLoadAttributes (351ms)
-			ProcessInitializeOnLoadMethodAttributes (21ms)
-			AfterProcessingInitializeOnLoad (13ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 2.95 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3125 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3629.
-Memory consumption went from 126.3 MB to 126.3 MB.
-Total: 3.046400 ms (FindLiveObjects: 0.196300 ms CreateObjectMapping: 0.081500 ms MarkObjects: 2.718100 ms  DeleteObjects: 0.049200 ms)
+Unloading 3318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (10.4 MB). Loaded Objects now: 3882.
+Memory consumption went from 156.4 MB to 146.1 MB.
+Total: 4.188500 ms (FindLiveObjects: 0.211800 ms CreateObjectMapping: 0.087300 ms MarkObjects: 2.787400 ms  DeleteObjects: 1.100600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -246,53 +382,769 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.304 seconds
-Refreshing native plugins compatible for Editor in 2.10 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.258 seconds
+Refreshing native plugins compatible for Editor in 2.13 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.566 seconds
-Domain Reload Profiling: 869ms
-	BeginReloadAssembly (106ms)
+- Finished resetting the current domain, in  0.517 seconds
+Domain Reload Profiling: 774ms
+	BeginReloadAssembly (92ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (2ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (23ms)
+		CreateAndSetChildDomain (19ms)
 	RebuildCommonClasses (18ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (18ms)
-	LoadAllAssembliesAndSetupDomain (154ms)
-		LoadAssemblies (199ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (125ms)
+		LoadAssemblies (165ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (12ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (517ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (263ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (190ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Refreshing native plugins compatible for Editor in 5.35 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3319 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (10.4 MB). Loaded Objects now: 3885.
+Memory consumption went from 156.7 MB to 146.3 MB.
+Total: 5.210400 ms (FindLiveObjects: 0.212700 ms CreateObjectMapping: 0.075900 ms MarkObjects: 3.636900 ms  DeleteObjects: 1.282900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.250 seconds
+Refreshing native plugins compatible for Editor in 2.00 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.504 seconds
+Domain Reload Profiling: 754ms
+	BeginReloadAssembly (91ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (118ms)
+		LoadAssemblies (157ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (505ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (259ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (185ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 4.09 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3319 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (10.4 MB). Loaded Objects now: 3888.
+Memory consumption went from 156.7 MB to 146.3 MB.
+Total: 4.308900 ms (FindLiveObjects: 0.244800 ms CreateObjectMapping: 0.131100 ms MarkObjects: 2.777800 ms  DeleteObjects: 1.153900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.247 seconds
+Refreshing native plugins compatible for Editor in 1.98 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.502 seconds
+Domain Reload Profiling: 749ms
+	BeginReloadAssembly (89ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (117ms)
+		LoadAssemblies (154ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (503ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (266ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (190ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 3.53 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3319 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (10.4 MB). Loaded Objects now: 3891.
+Memory consumption went from 156.7 MB to 146.3 MB.
+Total: 4.480700 ms (FindLiveObjects: 0.225000 ms CreateObjectMapping: 0.119100 ms MarkObjects: 2.886900 ms  DeleteObjects: 1.248200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 863.338997 seconds.
+  path: Assets/Terrains/TestGraph.asset
+  artifactKey: Guid(775afe682d9c14e47859b092c0a45414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrains/TestGraph.asset using Guid(775afe682d9c14e47859b092c0a45414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8522791b937ddde033dc6a8d557fc89a') in 0.040421 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 4.417061 seconds.
+  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AdditiveSprite.mat
+  artifactKey: Guid(55c04ce684cb542debc357409498bc4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AdditiveSprite.mat using Guid(55c04ce684cb542debc357409498bc4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77cec04f179d1b6e553cc2521ce58315') in 0.057514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Moon Glare.flare
+  artifactKey: Guid(abbc1e6231a944490a02e2ad613ec906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Moon Glare.flare using Guid(abbc1e6231a944490a02e2ad613ec906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65ad919e7e07d378786e71100179b17') in 0.000604 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Center.fbx
+  artifactKey: Guid(258cb4865d37b4292be3195af50aaa8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Center.fbx using Guid(258cb4865d37b4292be3195af50aaa8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6dd03a0a3030c77a57348209bc8fe5f') in 0.048390 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Light.fbx
+  artifactKey: Guid(d9ad0f74d68824711bc800186cf63d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Light.fbx using Guid(d9ad0f74d68824711bc800186cf63d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '742885a2f4806d6d0ad283d7b1a1827f') in 0.010964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/SunGlow.prefab
+  artifactKey: Guid(77c6a14c272c145258604a1a07246e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/SunGlow.prefab using Guid(77c6a14c272c145258604a1a07246e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c32330ec3dc2483e6dc9b52fa688ebea') in 0.001323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSkyFreeDemoEnvironment.prefab
+  artifactKey: Guid(e2402d4ef4fe747ae9ad59bdccad4556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSkyFreeDemoEnvironment.prefab using Guid(e2402d4ef4fe747ae9ad59bdccad4556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '238b0a196038aaf5491127101d51c5b8') in 0.218039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 119
+========================================================================
+Received Import Request.
+  Time since last request: 0.192989 seconds.
+  path: Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.mat
+  artifactKey: Guid(c56e28e54cac24b04ae3dd957d214534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.mat using Guid(c56e28e54cac24b04ae3dd957d214534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01ca195c34d994092ccb5d4c0f41b100') in 0.108552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_0_Front+Z.png
+  artifactKey: Guid(d731d71c2b8e94c18b5ef8be277e6773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_0_Front+Z.png using Guid(d731d71c2b8e94c18b5ef8be277e6773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb035a8aa95832a08d77798480db03d6') in 0.016872 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_3_Right-X.png
+  artifactKey: Guid(d3b809c8b33ff46faa4245f0bca7e6fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_3_Right-X.png using Guid(d3b809c8b33ff46faa4245f0bca7e6fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afb6efb47c14382f2d5391a66133e36a') in 0.013083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Equirect.png
+  artifactKey: Guid(d4c8dc343ae5d4673b7720ffdb1ddf00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Equirect.png using Guid(d4c8dc343ae5d4673b7720ffdb1ddf00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18400e70ec337c3ae3a0f4273d4a80c3') in 0.032489 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.273206 seconds.
+  path: Assets/AllSkyFree/Cold Night/Cold Night.mat
+  artifactKey: Guid(9af23ba5fa5364ff598888460e0e2759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Cold Night/Cold Night.mat using Guid(9af23ba5fa5364ff598888460e0e2759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75ad81c5988888fde1c377b998bb9663') in 0.082938 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AllSkyFree/Cold Night/Cold Night__Cam_4_Up+Y.png
+  artifactKey: Guid(3d6928c404a7c46c3991bb1b73521d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Cold Night/Cold Night__Cam_4_Up+Y.png using Guid(3d6928c404a7c46c3991bb1b73521d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8df6a180cb023ca65f672e0277f8c455') in 0.016546 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.912095 seconds.
+  path: Assets/AllSkyFree/Cold Sunset/Cold Sunset.mat
+  artifactKey: Guid(2d796ced94d61438fbab81b194038162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Cold Sunset/Cold Sunset.mat using Guid(2d796ced94d61438fbab81b194038162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e52ca92681cbf4a303387dc2b73c4035') in 0.025936 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_3_Right-X.png
+  artifactKey: Guid(1f225a337fa434ec1b937d9c8b70a667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_3_Right-X.png using Guid(1f225a337fa434ec1b937d9c8b70a667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b978c25470ace95b6a87d2f8f87ddec9') in 0.014932 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.739553 seconds.
+  path: Assets/AllSkyFree/Deep Dusk/Deep Dusk.mat
+  artifactKey: Guid(b4f152e0498484391a9f0d5a1facf03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Deep Dusk/Deep Dusk.mat using Guid(b4f152e0498484391a9f0d5a1facf03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a64553697aa1ed1ccd6a91f998a10b96') in 0.026203 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_4_Up+Y.png
+  artifactKey: Guid(d6efad16563c1446d86a121dbb004300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_4_Up+Y.png using Guid(d6efad16563c1446d86a121dbb004300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c7a460d53d8f70c9ef179459c2c164') in 0.018230 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.623580 seconds.
+  path: Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.mat
+  artifactKey: Guid(7416536dbe0334cfd888dd1beb75a9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.mat using Guid(7416536dbe0334cfd888dd1beb75a9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a1e7cbd81408794a4d0721a6337892e') in 0.118623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 3.140185 seconds.
+  path: Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink.mat
+  artifactKey: Guid(8b7dd0809c7c6498789fa32a61eaa6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink.mat using Guid(8b7dd0809c7c6498789fa32a61eaa6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb1f729e1040360dfd5a6c1cc796563') in 0.078270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_3_Right-X.png
+  artifactKey: Guid(938f8444195114ab791cdba8f627e3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_3_Right-X.png using Guid(938f8444195114ab791cdba8f627e3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ae908ca420e0a9df9616fa0fb2093b7') in 0.016051 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.564879 seconds.
+  path: Assets/AllSkyFree/Night MoonBurst/AllSky_Night_MoonBurst Equirect.mat
+  artifactKey: Guid(51b74d7bad397457d883c5940f7664d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Night MoonBurst/AllSky_Night_MoonBurst Equirect.mat using Guid(51b74d7bad397457d883c5940f7664d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e66779ab0448476bbddee599860e8a46') in 0.043697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_5_Down-Y.png
+  artifactKey: Guid(771300e956150427f8e4740c74cdd67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_5_Down-Y.png using Guid(771300e956150427f8e4740c74cdd67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c988d2c58d3de2d85f8f2671f62cb41a') in 0.012778 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.745676 seconds.
+  path: Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.mat
+  artifactKey: Guid(f2b5f3f20933f434e850db1b710542fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.mat using Guid(f2b5f3f20933f434e850db1b710542fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '937156b6ad2a5c2f62915250ef827d9b') in 0.028438 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_2_Left+X.png
+  artifactKey: Guid(4b922104744dc4f5ab309b556a7677da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_2_Left+X.png using Guid(4b922104744dc4f5ab309b556a7677da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d390da4cb741738a6f088c0c335d337') in 0.015802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.118555 seconds.
+  path: Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.mat
+  artifactKey: Guid(656058fe318eb48558d21d66d1a79a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.mat using Guid(656058fe318eb48558d21d66d1a79a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a69359a20dff36c795f1f979c70c3120') in 0.029854 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_3_Right-X.png
+  artifactKey: Guid(ca9af6b5ce9284592aabb781392ff61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_3_Right-X.png using Guid(ca9af6b5ce9284592aabb781392ff61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '462020d48a6c015cc548699577c96aa4') in 0.014395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.016223 seconds.
+  path: Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky.mat
+  artifactKey: Guid(aa78c8d403a8547fe86d1f74239e6b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky.mat using Guid(aa78c8d403a8547fe86d1f74239e6b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14ffeefb93bf94ca45753cd9d4d1c922') in 0.081683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_4_Up+Y.png
+  artifactKey: Guid(d8144633fec3342d9b7d9388377fb2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_4_Up+Y.png using Guid(d8144633fec3342d9b7d9388377fb2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a3ed0afda05050c4844bacbf7f49a02') in 0.017514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.287330 seconds.
+  path: Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunsetSettings.lighting
+  artifactKey: Guid(57fc67b1325ad6348908daa361d780eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunsetSettings.lighting using Guid(57fc67b1325ad6348908daa361d780eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) LightingSettings: switching bake backend from 1 to 0.
+ -> (artifact id: 'a94da054b25261b46881b16360e28840') in 0.000842 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.917076 seconds.
+  path: Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.unity
+  artifactKey: Guid(28673ec8420b8493e9588ddb0b4ed7b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.unity using Guid(28673ec8420b8493e9588ddb0b4ed7b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8338539a106d38a7f73a9cb012faf970') in 0.000366 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 110.591674 seconds.
+  path: Assets/NewLayer 1.terrainlayer
+  artifactKey: Guid(047b71371196031419a9a97f3eced0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewLayer 1.terrainlayer using Guid(047b71371196031419a9a97f3eced0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4553009d19579dbdedb125a1873cac0d') in 0.006002 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 11.435319 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9997941e3263edd7f9279d836d1b1849') in 0.000377 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 370.619030 seconds.
+  path: Assets/Skybox
+  artifactKey: Guid(8d2e9290a4446b04f88ea8ba087762ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox using Guid(8d2e9290a4446b04f88ea8ba087762ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe38952cee661c952ea6db5d77d32b9') in 0.000589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 18.082014 seconds.
+  path: Assets/Skybox/BlueSkySkybox.png
+  artifactKey: Guid(69a424c0a95d2ba49b598143eefe7585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox/BlueSkySkybox.png using Guid(69a424c0a95d2ba49b598143eefe7585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97c3e440293acd6986aef1460a6511bc') in 0.019031 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 46.602334 seconds.
+  path: Assets/Skybox/BlueSkySkybox.png
+  artifactKey: Guid(69a424c0a95d2ba49b598143eefe7585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox/BlueSkySkybox.png using Guid(69a424c0a95d2ba49b598143eefe7585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bbac1133ca4d3744369fb7f31b944d3') in 0.022455 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 12.096515 seconds.
+  path: Assets/Skybox/Skybox_1.mat
+  artifactKey: Guid(dbe1e4aa9fbcf794386083622c4a342d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox/Skybox_1.mat using Guid(dbe1e4aa9fbcf794386083622c4a342d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f98a21f1f884986c37d74d0195182a54') in 0.017319 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 79.337735 seconds.
+  path: Assets/MapMagic/Demo/Materials/TerrainHDRP.mat
+  artifactKey: Guid(792016030bae20d4dada2f09b5749a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Demo/Materials/TerrainHDRP.mat using Guid(792016030bae20d4dada2f09b5749a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bc7ae40046ff2387293b7f7e7176bc5') in 0.009909 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/MapMagic/Demo/Materials/Water.mat
+  artifactKey: Guid(e3ec03940d8819c47ae8616963afd1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Demo/Materials/Water.mat using Guid(e3ec03940d8819c47ae8616963afd1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e915fdf9fc34818017544a2fa5bad92') in 0.136028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.085283 seconds.
+  path: Assets/MapMagic/Demo/Grass/Meshes/Materials/Sedge.mat
+  artifactKey: Guid(e016d51411dde1c4595431ce83012e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Demo/Grass/Meshes/Materials/Sedge.mat using Guid(e016d51411dde1c4595431ce83012e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a72e6d5668df1881f3bbdeadeba0f5eb') in 0.077833 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat
+  artifactKey: Guid(b246c4190f4e46ec9352fe15a7b09ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat using Guid(b246c4190f4e46ec9352fe15a7b09ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd3762490403f98175baea1340646c08') in 0.057504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
+  artifactKey: Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '593b82a3e7e685df0c5bd02ea7488fa4') in 0.020718 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/MapMagic/Demo/Materials/SkyCloudyEvening.mat
+  artifactKey: Guid(20af154a376043b45a05fa323b5818a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Demo/Materials/SkyCloudyEvening.mat using Guid(20af154a376043b45a05fa323b5818a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c8f4dccc03ce76d6d65bd7dd96aa052') in 0.017787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Small Crate_diffuse.mat
+  artifactKey: Guid(22262639920f43d6be32430e4e58350d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Small Crate_diffuse.mat using Guid(22262639920f43d6be32430e4e58350d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f38c7b97fe9bd1cefc76f25f14b789') in 0.090114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.282132 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Soft Mask.mat
+  artifactKey: Guid(42df1c7856584b6b8db9a509b6b10074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Soft Mask.mat using Guid(42df1c7856584b6b8db9a509b6b10074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd62a68652d13e4ffea80836b6906b819') in 0.024122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54c57fd990f40acaca41d2c4f15025bf') in 0.025461 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/MapMagic/Demo/Compatibility/MegaSplat/MegaSplatMaterial.mat
+  artifactKey: Guid(13793cc8c98a2b6409b78c48e499a2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Demo/Compatibility/MegaSplat/MegaSplatMaterial.mat using Guid(13793cc8c98a2b6409b78c48e499a2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6bbeb60083978de46a9513d23a50590') in 0.332047 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262e978c7c8cc5d788f5b9cae71750d8') in 0.044941 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat
+  artifactKey: Guid(9ad269c99dcf42b7aedefd83dd5a7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat using Guid(9ad269c99dcf42b7aedefd83dd5a7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17820582794546a6165af49ec706a084') in 0.011627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf
+  artifactKey: Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf using Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294d8b1710dc942a6654edea9fab0fea') in 0.014411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf
+  artifactKey: Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf using Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc56773670ad61665a1d1468320514c') in 0.006022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF
+  artifactKey: Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF using Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7f305e02e39be85e2631c4793c8812a') in 0.006607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '868ae7279cb8681e901fb13a12c8cb7e') in 0.007551 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '903d8abbcfc6a02666d69bb8f3bccbe2') in 0.018034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat
+  artifactKey: Guid(aadd5a709a48466c887296bb5b1b8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat using Guid(aadd5a709a48466c887296bb5b1b8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be13e9464c8be066fa2972f7b5e1742a') in 0.016250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf
+  artifactKey: Guid(5dd49b3eacc540408c98eee0de38e0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf using Guid(5dd49b3eacc540408c98eee0de38e0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '878869d0b4a4293b898f7fbb9189ca37') in 0.007020 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Logo Scene.mat
+  artifactKey: Guid(c719e38f25a9480abd2480ab621a2949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Logo Scene.mat using Guid(c719e38f25a9480abd2480ab621a2949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '909e760e1cf587d2230ac3c93552cfc3') in 0.016759 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Metalic Green.mat
+  artifactKey: Guid(8b29aaa3eec7468097ff07adfcf29ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Metalic Green.mat using Guid(8b29aaa3eec7468097ff07adfcf29ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b063ccd1829d644f22dd7f3eb6c73e') in 0.097291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf
+  artifactKey: Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf using Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f14033b84d77025a5fbc24bc4dbf86') in 0.006639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 16.940630 seconds.
+  path: Assets/MapMagic/Demo/Textures/Skybox.tif
+  artifactKey: Guid(a87483b0fba3c7545991a9659847d537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Demo/Textures/Skybox.tif using Guid(a87483b0fba3c7545991a9659847d537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4264ee06bfbb72d52c9eda9ecd0475fa') in 0.012135 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.327 seconds
+Refreshing native plugins compatible for Editor in 2.52 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.582 seconds
+Domain Reload Profiling: 908ms
+	BeginReloadAssembly (112ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (168ms)
+		LoadAssemblies (215ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
 			TypeCache.Refresh (6ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (566ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (582ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (307ms)
+		SetupLoadedEditorAssemblies (290ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (2ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (41ms)
-			ProcessInitializeOnLoadAttributes (240ms)
-			ProcessInitializeOnLoadMethodAttributes (15ms)
+			BeforeProcessingInitializeOnLoad (44ms)
+			ProcessInitializeOnLoadAttributes (206ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
 			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Refreshing native plugins compatible for Editor in 2.79 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (6ms)
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 3.70 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3125 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3632.
-Memory consumption went from 126.3 MB to 126.3 MB.
-Total: 3.205500 ms (FindLiveObjects: 0.209900 ms CreateObjectMapping: 0.103700 ms MarkObjects: 2.837400 ms  DeleteObjects: 0.053500 ms)
+Unloading 3318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (10.4 MB). Loaded Objects now: 3912.
+Memory consumption went from 158.1 MB to 147.7 MB.
+Total: 4.662500 ms (FindLiveObjects: 0.260300 ms CreateObjectMapping: 0.119600 ms MarkObjects: 3.136900 ms  DeleteObjects: 1.144800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -308,6 +1160,131 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.264 seconds
+Refreshing native plugins compatible for Editor in 2.03 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.521 seconds
+Domain Reload Profiling: 783ms
+	BeginReloadAssembly (94ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (128ms)
+		LoadAssemblies (167ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (521ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (260ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (186ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 3.82 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (10.4 MB). Loaded Objects now: 3915.
+Memory consumption went from 158.1 MB to 147.7 MB.
+Total: 4.965400 ms (FindLiveObjects: 0.227100 ms CreateObjectMapping: 0.175000 ms MarkObjects: 3.174900 ms  DeleteObjects: 1.386800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 93.444976 seconds.
+  path: Assets/3D Models/Jammer/Type 95 Radar (Mercenaries 2).obj
+  artifactKey: Guid(968d9a4fe3251b342b04a6871204ebba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Jammer/Type 95 Radar (Mercenaries 2).obj using Guid(968d9a4fe3251b342b04a6871204ebba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e083f2bd4826f19aaf10f14d4b30cb24') in 0.114001 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.694049 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow.mat
+  artifactKey: Guid(f2dcf029949142e28b974630369c8b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow.mat using Guid(f2dcf029949142e28b974630369c8b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f2a653b02efa1d9078eaff99c774579') in 0.006164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000534 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
+  artifactKey: Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4baced0df84e5676620d82e122fce073') in 0.024421 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat
+  artifactKey: Guid(e6b9b44320f4448d9d5e0ee634259966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat using Guid(e6b9b44320f4448d9d5e0ee634259966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fffcd38ff2087a5441c42bce2f839441') in 0.107340 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat
+  artifactKey: Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat using Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ebf6a6930c52eeb5cd2f6198e105aa5') in 0.072806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D Models/Radar/1S12 Long Track acquisition radar/Materials/1S12 Long Track Acquisition Radar-defaultMat.mat
+  artifactKey: Guid(f660877657ae5a343a8d7132fccdce1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Radar/1S12 Long Track acquisition radar/Materials/1S12 Long Track Acquisition Radar-defaultMat.mat using Guid(f660877657ae5a343a8d7132fccdce1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a45fca6ad8ec63e2e6f59e8b65f45e1d') in 0.011142 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server
