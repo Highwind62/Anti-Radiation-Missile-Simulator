@@ -15,7 +15,7 @@ C:/Users/scrat/OneDrive/Documents/GitHub/Anti-Radiation-Missile-Simulator
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-53071
+52732
 Successfully changed project path to: C:/Users/scrat/OneDrive/Documents/GitHub/Anti-Radiation-Missile-Simulator
 C:/Users/scrat/OneDrive/Documents/GitHub/Anti-Radiation-Missile-Simulator
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/scrat/OneDrive/Documents/GitHub/Anti-Radiation-Missile-Simulator
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [13868] Host "[IP] 10.74.9.199 [Port] 0 [Flags] 2 [Guid] 999634485 [EditorId] 999634485 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NIOSBHC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [25312] Host "[IP] 10.74.9.199 [Port] 0 [Flags] 2 [Guid] 1152597649 [EditorId] 1152597649 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NIOSBHC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [13868] Host "[IP] 10.74.9.199 [Port] 0 [Flags] 2 [Guid] 999634485 [EditorId] 999634485 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NIOSBHC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25312] Host "[IP] 10.74.9.199 [Port] 0 [Flags] 2 [Guid] 1152597649 [EditorId] 1152597649 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NIOSBHC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 23 workers.
-Refreshing native plugins compatible for Editor in 4.24 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 5.38 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.10f1 (ff3792e53c62)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56868
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003386 seconds.
-- Loaded All Assemblies, in  0.213 seconds
+Registered in 0.003426 seconds.
+- Loaded All Assemblies, in  0.244 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.145 seconds
-Domain Reload Profiling: 358ms
-	BeginReloadAssembly (66ms)
+- Finished resetting the current domain, in  0.164 seconds
+Domain Reload Profiling: 407ms
+	BeginReloadAssembly (86ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (20ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (22ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (85ms)
-		LoadAssemblies (65ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (91ms)
+		LoadAssemblies (85ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (84ms)
-			TypeCache.Refresh (83ms)
-				TypeCache.ScanAssembly (74ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (146ms)
+		AnalyzeDomain (90ms)
+			TypeCache.Refresh (88ms)
+				TypeCache.ScanAssembly (80ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (165ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (113ms)
+		SetupLoadedEditorAssemblies (127ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (74ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
+			ProcessInitializeOnLoadAttributes (81ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,48 +115,48 @@ Domain Reload Profiling: 358ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.362 seconds
-Refreshing native plugins compatible for Editor in 1.90 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.508 seconds
+Refreshing native plugins compatible for Editor in 2.27 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.363 seconds
-Domain Reload Profiling: 723ms
-	BeginReloadAssembly (84ms)
+- Finished resetting the current domain, in  0.499 seconds
+Domain Reload Profiling: 1005ms
+	BeginReloadAssembly (110ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (11ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (24ms)
-	LoadAllAssembliesAndSetupDomain (228ms)
-		LoadAssemblies (173ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (340ms)
+		LoadAssemblies (274ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (104ms)
-			TypeCache.Refresh (92ms)
-				TypeCache.ScanAssembly (83ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (363ms)
+		AnalyzeDomain (133ms)
+			TypeCache.Refresh (113ms)
+				TypeCache.ScanAssembly (102ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (499ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (279ms)
+		SetupLoadedEditorAssemblies (386ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (37ms)
-			ProcessInitializeOnLoadAttributes (207ms)
-			ProcessInitializeOnLoadMethodAttributes (26ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (290ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (3ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
 Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
@@ -169,13 +169,13 @@ Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/U
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
 Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
 Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 3.97 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 6.77 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3357 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 44 unused Assets / (10.4 MB). Loaded Objects now: 3829.
 Memory consumption went from 160.1 MB to 149.7 MB.
-Total: 4.516600 ms (FindLiveObjects: 0.229300 ms CreateObjectMapping: 0.087600 ms MarkObjects: 3.088600 ms  DeleteObjects: 1.109600 ms)
+Total: 6.105200 ms (FindLiveObjects: 0.274500 ms CreateObjectMapping: 0.106300 ms MarkObjects: 4.191700 ms  DeleteObjects: 1.531400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -190,3 +190,64 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 324178.477740 seconds.
+  path: Assets/MapMagic/Core/Editor/Resources/MapMagic/About.png
+  artifactKey: Guid(0d85e3cd5a906c549a537b38816837e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Core/Editor/Resources/MapMagic/About.png using Guid(0d85e3cd5a906c549a537b38816837e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f5198f5e65c7b63026a6c624e2e4715') in 0.099859 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/MapMagic/Core/Editor/Resources/GeneratorIcons/pro/Add.png
+  artifactKey: Guid(bc3094669c0f82d49bbabe03afc4d9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Core/Editor/Resources/GeneratorIcons/pro/Add.png using Guid(bc3094669c0f82d49bbabe03afc4d9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56cded46998d383ecc971cccc3a98451') in 0.023888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/Layers/pro/AddPanel.png
+  artifactKey: Guid(b63c4f7cbf25f114193ba616d081be96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/Layers/pro/AddPanel.png using Guid(b63c4f7cbf25f114193ba616d081be96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2b261557bfe16abd0286eca1dd2af12') in 0.025878 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/Layers/Add.png
+  artifactKey: Guid(4e5b646532743294092cf1143213aa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/Layers/Add.png using Guid(4e5b646532743294092cf1143213aa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47572018091b250a2193366adc157914') in 0.025692 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/Layers/AddPanelEmpty.png
+  artifactKey: Guid(3449a4def699a9a48a997871c031aeb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/Layers/AddPanelEmpty.png using Guid(3449a4def699a9a48a997871c031aeb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6abbb8fff36fc571477401c7460c1d51') in 0.023533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/Icons/pro/Add.png
+  artifactKey: Guid(13f232a0d8fe9c440abaac33daa05c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/Icons/pro/Add.png using Guid(13f232a0d8fe9c440abaac33daa05c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1bed87917b85fe1470d6bdc8bb933e5') in 0.022604 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.114687 seconds.
+  path: Assets/MapMagic/Core/Editor/Resources/MapMagic/Icons/AssetBig.png
+  artifactKey: Guid(3b2583caea1865041baf19a3caaeba2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Core/Editor/Resources/MapMagic/Icons/AssetBig.png using Guid(3b2583caea1865041baf19a3caaeba2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ffcf3defef4d1273ea7c1b835cd8f3b') in 0.019324 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
