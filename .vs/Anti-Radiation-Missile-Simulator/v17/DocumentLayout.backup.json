@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{CEDC50E5-0E50-B23D-D840-40CDE2FF4DC1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\conecollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEDC50E5-0E50-B23D-D840-40CDE2FF4DC1}|Assembly-CSharp.csproj|c:\\users\\scrat\\onedrive\\documents\\github\\anti-radiation-missile-simulator\\assets\\scripts\\detectrange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CEDC50E5-0E50-B23D-D840-40CDE2FF4DC1}|Assembly-CSharp.csproj|C:\\Users\\scrat\\OneDrive\\Documents\\GitHub\\Anti-Radiation-Missile-Simulator\\assets\\scripts\\detectrange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEDC50E5-0E50-B23D-D840-40CDE2FF4DC1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\detectrange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -43,8 +43,7 @@
               "RelativeToolTip": "Assets\\Scripts\\DetectRange.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T19:38:32.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T19:38:32.9Z"
             }
           ]
         }

@@ -15,7 +15,7 @@ C:/Users/scrat/OneDrive/Documents/GitHub/Anti-Radiation-Missile-Simulator
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-53071
+52732
 Successfully changed project path to: C:/Users/scrat/OneDrive/Documents/GitHub/Anti-Radiation-Missile-Simulator
 C:/Users/scrat/OneDrive/Documents/GitHub/Anti-Radiation-Missile-Simulator
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/scrat/OneDrive/Documents/GitHub/Anti-Radiation-Missile-Simulator
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [5712] Host "[IP] 10.74.9.199 [Port] 0 [Flags] 2 [Guid] 3422101699 [EditorId] 3422101699 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NIOSBHC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [26592] Host "[IP] 10.74.9.199 [Port] 0 [Flags] 2 [Guid] 4146446389 [EditorId] 4146446389 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NIOSBHC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [5712] Host "[IP] 10.74.9.199 [Port] 0 [Flags] 2 [Guid] 3422101699 [EditorId] 3422101699 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NIOSBHC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [26592] Host "[IP] 10.74.9.199 [Port] 0 [Flags] 2 [Guid] 4146446389 [EditorId] 4146446389 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NIOSBHC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 23 workers.
-Refreshing native plugins compatible for Editor in 4.58 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 7.70 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.10f1 (ff3792e53c62)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56616
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56688
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003366 seconds.
-- Loaded All Assemblies, in  0.215 seconds
+Registered in 0.004290 seconds.
+- Loaded All Assemblies, in  0.249 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.144 seconds
-Domain Reload Profiling: 358ms
-	BeginReloadAssembly (66ms)
+- Finished resetting the current domain, in  0.157 seconds
+Domain Reload Profiling: 405ms
+	BeginReloadAssembly (87ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (87ms)
-		LoadAssemblies (65ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (95ms)
+		LoadAssemblies (85ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (86ms)
-			TypeCache.Refresh (85ms)
-				TypeCache.ScanAssembly (76ms)
+		AnalyzeDomain (94ms)
+			TypeCache.Refresh (92ms)
+				TypeCache.ScanAssembly (83ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (145ms)
+	FinalizeReload (157ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (111ms)
+		SetupLoadedEditorAssemblies (121ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (74ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
+			ProcessInitializeOnLoadAttributes (78ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,48 +115,48 @@ Domain Reload Profiling: 358ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.362 seconds
-Refreshing native plugins compatible for Editor in 1.96 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.516 seconds
+Refreshing native plugins compatible for Editor in 2.33 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.363 seconds
-Domain Reload Profiling: 723ms
-	BeginReloadAssembly (80ms)
+- Finished resetting the current domain, in  0.497 seconds
+Domain Reload Profiling: 1012ms
+	BeginReloadAssembly (117ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (11ms)
-	RebuildCommonClasses (18ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (24ms)
-	LoadAllAssembliesAndSetupDomain (232ms)
-		LoadAssemblies (175ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (335ms)
+		LoadAssemblies (271ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (105ms)
-			TypeCache.Refresh (92ms)
-				TypeCache.ScanAssembly (82ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (363ms)
+		AnalyzeDomain (130ms)
+			TypeCache.Refresh (112ms)
+				TypeCache.ScanAssembly (100ms)
+			ScanForSourceGeneratedMonoScriptInfo (12ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (497ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (276ms)
+		SetupLoadedEditorAssemblies (381ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
+			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (35ms)
-			ProcessInitializeOnLoadAttributes (206ms)
-			ProcessInitializeOnLoadMethodAttributes (26ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (277ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (4ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
 Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
@@ -169,13 +169,13 @@ Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/U
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
 Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
 Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 3.85 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 5.75 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3357 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 44 unused Assets / (10.4 MB). Loaded Objects now: 3829.
 Memory consumption went from 160.1 MB to 149.7 MB.
-Total: 4.486700 ms (FindLiveObjects: 0.214400 ms CreateObjectMapping: 0.139100 ms MarkObjects: 3.077500 ms  DeleteObjects: 1.054700 ms)
+Total: 5.836000 ms (FindLiveObjects: 0.287300 ms CreateObjectMapping: 0.137800 ms MarkObjects: 3.943900 ms  DeleteObjects: 1.434400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -192,17 +192,94 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 6155.241733 seconds.
-  path: Assets/MapMagic/Demo/Compatibility/MicroSplat/microsplat_layer_YellowGrass_3.terrainlayer
-  artifactKey: Guid(2a94bb3c3f1c48544870d19ba52a0f5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MapMagic/Demo/Compatibility/MicroSplat/microsplat_layer_YellowGrass_3.terrainlayer using Guid(2a94bb3c3f1c48544870d19ba52a0f5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23afb50cb3d23e921e5c1d1ca090e058') in 0.053106 seconds
+  Time since last request: 324178.428318 seconds.
+  path: Assets/3D Models/Radar/1S12 Long Track acquisition radar/2024-07-11_001101.jpg
+  artifactKey: Guid(b21f4149409340d49ac80086048cf2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Radar/1S12 Long Track acquisition radar/2024-07-11_001101.jpg using Guid(b21f4149409340d49ac80086048cf2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21d334eb7eb55bf4f9845fe5ab425b43') in 0.097630 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 294.964214 seconds.
-  path: Assets/Terrains/TestGraph.asset
-  artifactKey: Guid(775afe682d9c14e47859b092c0a45414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TestGraph.asset using Guid(775afe682d9c14e47859b092c0a45414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '526bd05df58416625eaf8cde05281c8c') in 0.017968 seconds
+  Time since last request: 0.000039 seconds.
+  path: Assets/3D Models/Radar/1S12 Long Track acquisition radar/1-141121231547.jpg
+  artifactKey: Guid(09f380d8f97a3944691f9f6ca520a3a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Radar/1S12 Long Track acquisition radar/1-141121231547.jpg using Guid(09f380d8f97a3944691f9f6ca520a3a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '558336447f84b857b026eb2891956481') in 0.029769 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/Layers/pro/Add.png
+  artifactKey: Guid(2ea6af2d4fac1b9419863bb384c80bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/Layers/pro/Add.png using Guid(2ea6af2d4fac1b9419863bb384c80bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47d1b177a8a1a665eb52417637d88f5d') in 0.024647 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/3D Models/Radar/1S12 Long Track acquisition radar/2024-05-30_220458.jpg
+  artifactKey: Guid(e4ff6912543aefb46b1ace637995f548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Radar/1S12 Long Track acquisition radar/2024-05-30_220458.jpg using Guid(e4ff6912543aefb46b1ace637995f548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c97584ecfa9a42741c5015d0232b7ad') in 0.025577 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/MapMagic/Core/Editor/Resources/MapMagic/NodeLayers/AddPanel.png
+  artifactKey: Guid(eca0e1bde5d340d4cbf691431e3effb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Core/Editor/Resources/MapMagic/NodeLayers/AddPanel.png using Guid(eca0e1bde5d340d4cbf691431e3effb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc5d621665c597d06adb09355dfc0230') in 0.025116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/3D Models/Radar/1S12 Long Track acquisition radar/3dtxt027.jpg
+  artifactKey: Guid(231b4d9fcb7913940b7a2ba176e8df5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Radar/1S12 Long Track acquisition radar/3dtxt027.jpg using Guid(231b4d9fcb7913940b7a2ba176e8df5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20491454681e58cab09e5946ffaaae73') in 0.030385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/Layers/pro/AddPanelEmpty.png
+  artifactKey: Guid(1f8fe5f9f5096f24cba259f00c7d8795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/Layers/pro/AddPanelEmpty.png using Guid(1f8fe5f9f5096f24cba259f00c7d8795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce51a68e67f087d84d5ca5838aa6c4c7') in 0.024718 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.013095 seconds.
+  path: Assets/MapMagic/Core/Editor/Resources/MapMagic/ValuesAdjustPreview/On/pro/Adjust.png
+  artifactKey: Guid(5435ea062fceb924bad4a7cf433f0e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Core/Editor/Resources/MapMagic/ValuesAdjustPreview/On/pro/Adjust.png using Guid(5435ea062fceb924bad4a7cf433f0e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c932da6ca0e2446462ce1dcb08dd6b5') in 0.022194 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.006748 seconds.
+  path: Assets/MapMagic/Core/Editor/Resources/GeneratorIcons/Adjust.png
+  artifactKey: Guid(5a107064762c6aa49b966a3cf008cc05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Core/Editor/Resources/GeneratorIcons/Adjust.png using Guid(5a107064762c6aa49b966a3cf008cc05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4dd9857490c55a54f8829f05229dc51') in 0.023047 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.006447 seconds.
+  path: Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/TexCh/Alpha.png
+  artifactKey: Guid(ff6a619fa5d2fcf4191f02bb625ea45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Tools/GUI/Editor/Resources/DPUI/TexCh/Alpha.png using Guid(ff6a619fa5d2fcf4191f02bb625ea45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd44fe08609308266f21c562c8a72e3c8') in 0.023072 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.008801 seconds.
+  path: Assets/MapMagic/Core/Editor/Resources/GeneratorIcons/AnyIn.png
+  artifactKey: Guid(6a67ec62cc1809f48bd42bf76b7b08f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MapMagic/Core/Editor/Resources/GeneratorIcons/AnyIn.png using Guid(6a67ec62cc1809f48bd42bf76b7b08f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '758364344a305b1299bf3eb71044de5e') in 0.019844 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
