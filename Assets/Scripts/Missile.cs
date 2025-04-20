@@ -141,4 +141,13 @@ public class Missile : MonoBehaviour
         acceleration = 0;
         isLaunched = false;
     }
+
+    public void ClearGrid() { 
+      foreach (Transform child in DetectRange.transform)
+      {
+        if (child.name != "Cone") {
+          Destroy(child.gameObject);
+        }
+      }
+    }
 }

@@ -100,14 +100,14 @@ public class UIController : MonoBehaviour
 
     public void ShowUIAfterHit()
     {
-    startPanel.SetActive(true);
-    
+        startPanel.SetActive(true);
     }
 
     void ResetSimulation()
     {
         //  Call `ResetPosition()` in `Missile.cs` to reset the missile
         missileScript.ResetPosition();
+        missileScript.ClearGrid();
 
         speedInputField.text = "5";
         accelerationInputField.text = "1";

@@ -91,7 +91,7 @@ public class DetectRange : MonoBehaviour
     }
 
     public void CalculatePowerBasedOnLargest(GameObject radar, List<GameObject> jammers) {
-        double radarPower = 100;
+        double radarPower = 10;
         noisePower = 0;
 
         Vector3 radarPos = radar.transform.position;
@@ -112,7 +112,7 @@ public class DetectRange : MonoBehaviour
                     gOPosition.z = jammer.transform.position.z;
                     double d2 = Vector3.Distance(gOPosition, jammer.transform.position);
                     double jammerPower = jammer.GetComponent<Jammer>().GetJammerPower();
-                    Debug.Log("Power: " + jammerPower);
+                    //Debug.Log("Power: " + jammerPower);
                     power += jammerPower * ( 1 / (radius * radius)) * ( 1 / (d2 * d2));
                 }
 

@@ -1,15 +1,39 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Den.Tools", "Den.Tools.csproj", "{e622626c-ee97-b384-2f63-529389827c87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapMagic.Editor", "MapMagic.Editor.csproj", "{6775dfba-afb0-4488-31cd-e5556618bce9}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{c23c188b-5eb9-5ac7-4ef9-3f717b8bd83b}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapMagic", "MapMagic.csproj", "{9fc60fdb-ea9f-2d88-cbb4-6edeed5f467c}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Den.Tools.Editor", "Den.Tools.Editor.csproj", "{7eccdf99-71fb-1fe1-59ad-5b9faa343a3e}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapMagic.Settings", "MapMagic.Settings.csproj", "{9e062918-f1cb-bea1-96f8-d9cae832a623}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{fb3948fc-9c3c-9f28-97e4-bd140ae7f190}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{e622626c-ee97-b384-2f63-529389827c87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{e622626c-ee97-b384-2f63-529389827c87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6775dfba-afb0-4488-31cd-e5556618bce9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6775dfba-afb0-4488-31cd-e5556618bce9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{c23c188b-5eb9-5ac7-4ef9-3f717b8bd83b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{c23c188b-5eb9-5ac7-4ef9-3f717b8bd83b}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9fc60fdb-ea9f-2d88-cbb4-6edeed5f467c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9fc60fdb-ea9f-2d88-cbb4-6edeed5f467c}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7eccdf99-71fb-1fe1-59ad-5b9faa343a3e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7eccdf99-71fb-1fe1-59ad-5b9faa343a3e}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9e062918-f1cb-bea1-96f8-d9cae832a623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9e062918-f1cb-bea1-96f8-d9cae832a623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{fb3948fc-9c3c-9f28-97e4-bd140ae7f190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{fb3948fc-9c3c-9f28-97e4-bd140ae7f190}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
