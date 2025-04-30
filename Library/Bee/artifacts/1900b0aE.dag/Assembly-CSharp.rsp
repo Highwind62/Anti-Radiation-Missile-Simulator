@@ -368,6 +368,7 @@
 "Assets/Scripts/Jammer.cs"
 "Assets/Scripts/Missile.cs"
 "Assets/Scripts/MissileTrailRenderer.cs"
+"Assets/Scripts/Radar.cs"
 "Assets/Scripts/UIController.cs"
 "Assets/Scripts/Voxus/Random/AbstractRandom.cs"
 "Assets/Scripts/Voxus/Random/Examples/Example1.cs"

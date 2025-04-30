@@ -91,8 +91,8 @@ public class DetectRange : MonoBehaviour
     }
 
     public void CalculatePowerBasedOnLargest(GameObject radar, List<GameObject> jammers) {
-        double radarPower = 10;
-        noisePower = 0;
+        double radarPower = radar.GetComponent<Radar>().GetRadarPower();
+        // noisePower = 0;
 
         Vector3 radarPos = radar.transform.position;
 
@@ -196,7 +196,9 @@ public class DetectRange : MonoBehaviour
             float current_x = (i * (2.0F * radius/resolution)) - radius;
             for(int j = 0; j < resolution; j++){
                 float current_y = (j * (2.0F * radius/resolution)) - radius;
-                GameObject obj = Instantiate(gridIntersect, transform.TransformPoint(new Vector3 (current_x * 10.0F, current_y * 10.0F, 10.0F*distance)), transform.rotation);
+                GameObject obj = Instantiate(gridIntersect, 
+                transform.TransformPoint(new Vector3 (current_x * 10.0F, current_y * 10.0F, 10.0F*distance)), 
+                transform.rotation);
                 gridIntersects.Add(obj);
                 obj.transform.SetParent(transform);
                 

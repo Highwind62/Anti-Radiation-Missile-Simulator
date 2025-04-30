@@ -59,7 +59,7 @@ public class Missile : MonoBehaviour
         jmInCone = detectRange.FindJammersInCone(jammers);// Refresh jammer list in real-time
         detectRange.CalculatePowerBasedOnLargest(target, jmInCone);
         moveDir = detectRange.FindNewDirection();
-        Debug.Log("New Direction: " + moveDir);
+        // Debug.Log("New Direction: " + moveDir);
         detectRange.DestroyGrids();
 
         //  2.16 The missile only moves when `isLaunched = true`
@@ -149,5 +149,10 @@ public class Missile : MonoBehaviour
           Destroy(child.gameObject);
         }
       }
+    }
+
+    public void ClearTrail() {
+      MissileTrailRenderer trail = GetComponent<MissileTrailRenderer>();
+      trail.ResetTrail();
     }
 }

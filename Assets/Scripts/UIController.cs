@@ -108,6 +108,7 @@ public class UIController : MonoBehaviour
         //  Call `ResetPosition()` in `Missile.cs` to reset the missile
         missileScript.ResetPosition();
         missileScript.ClearGrid();
+        missileScript.ClearTrail();
 
         speedInputField.text = "5";
         accelerationInputField.text = "1";
